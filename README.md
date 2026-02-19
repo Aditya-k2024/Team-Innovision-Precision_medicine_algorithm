@@ -145,9 +145,6 @@ Contributions are welcome! Please run the test suite before submitting a PR:
 - **Backend**: `pytest`
 - **Frontend**: `npm run lint`
 
-## 📜 License
-
-MIT License. See [LICENSE](./LICENSE) for details.
 
 ## 👥 Team
 
@@ -155,3 +152,10 @@ MIT License. See [LICENSE](./LICENSE) for details.
 - **Deepak Raj** - Full Stack Developer
 - **Vaibhav Gupta** - AI/ML Engineer
 - **Aditya Kumar** - AI/ML Engineer
+
+
+## 📜 License
+
+MIT License. See [LICENSE](./LICENSE) for details.
+
+
