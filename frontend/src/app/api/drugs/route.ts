@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
+let backendUrl = process.env.BACKEND_URL || "http://localhost:8000";
+if (!backendUrl.startsWith("http")) {
+    backendUrl = `http://${backendUrl}`;
+}
+const BACKEND_URL = backendUrl;
 
 export async function GET() {
     try {

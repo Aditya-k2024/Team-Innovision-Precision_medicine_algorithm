@@ -13,7 +13,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateLLMExplanation } from "@/lib/llm";
 import type { PharmaGuardResult } from "@/lib/types";
 
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
+let backendUrl = process.env.BACKEND_URL || "http://localhost:8000";
+if (!backendUrl.startsWith("http")) {
+    backendUrl = `http://${backendUrl}`;
+}
+const BACKEND_URL = backendUrl;
 
 export async function POST(request: NextRequest) {
     try {

@@ -27,6 +27,6 @@ services:
         fromService:
           type: web
           name: pharmaguard-backend
-          property: url
+          property: hostport
       - key: GROQ_API_KEY
         sync: false # User must provide this in dashboard
