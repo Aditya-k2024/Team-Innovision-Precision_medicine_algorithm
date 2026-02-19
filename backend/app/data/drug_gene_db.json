@@ -1,0 +1,244 @@
+{
+  "drugs": {
+    "warfarin": {
+      "name": "Warfarin",
+      "category": "Anticoagulant",
+      "interactions": [
+        {
+          "gene": "CYP2C9",
+          "rsid": "rs1799853",
+          "risk_allele": "T",
+          "normal_allele": "C",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use standard warfarin dosing (5-7.5 mg/day)." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate Metabolizer (*1/*2)", "recommendation": "Consider 20-30% dose reduction. Monitor INR closely during initiation." },
+            "1/1": { "level": "HIGH", "phenotype": "Poor Metabolizer (*2/*2)", "recommendation": "Reduce dose by 40-50%. High bleeding risk—frequent INR monitoring required." }
+          },
+          "evidence": ["CPIC Guideline (2017)", "PharmGKB:PA166104949", "FDA Label"]
+        },
+        {
+          "gene": "CYP2C9",
+          "rsid": "rs1057910",
+          "risk_allele": "C",
+          "normal_allele": "A",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use standard warfarin dosing." },
+            "0/1": { "level": "HIGH", "phenotype": "Intermediate Metabolizer (*1/*3)", "recommendation": "Reduce dose by 30-40%. CYP2C9*3 has greater effect than *2." },
+            "1/1": { "level": "CRITICAL", "phenotype": "Poor Metabolizer (*3/*3)", "recommendation": "Reduce dose by 50-70%. Very high bleeding risk. Consider alternative anticoagulant." }
+          },
+          "evidence": ["CPIC Guideline (2017)", "PharmGKB:PA166104949", "PMID:18305455"]
+        },
+        {
+          "gene": "VKORC1",
+          "rsid": "rs9923231",
+          "risk_allele": "T",
+          "normal_allele": "C",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal VKORC1 Expression", "recommendation": "Use standard warfarin dosing." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate VKORC1 Expression", "recommendation": "Consider 25-30% lower starting dose." },
+            "1/1": { "level": "HIGH", "phenotype": "Low VKORC1 Expression", "recommendation": "May require 40-50% lower dose. Increased warfarin sensitivity." }
+          },
+          "evidence": ["CPIC Guideline (2017)", "PharmGKB:PA166104956", "PMID:15930419"]
+        }
+      ]
+    },
+    "clopidogrel": {
+      "name": "Clopidogrel",
+      "category": "Antiplatelet",
+      "interactions": [
+        {
+          "gene": "CYP2C19",
+          "rsid": "rs4244285",
+          "risk_allele": "A",
+          "normal_allele": "G",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use standard clopidogrel dosing (75 mg/day)." },
+            "0/1": { "level": "HIGH", "phenotype": "Intermediate Metabolizer (*1/*2)", "recommendation": "Reduced platelet inhibition. Consider alternative antiplatelet (prasugrel/ticagrelor)." },
+            "1/1": { "level": "CRITICAL", "phenotype": "Poor Metabolizer (*2/*2)", "recommendation": "Clopidogrel likely ineffective. Switch to prasugrel or ticagrelor. Boxed Warning applies." }
+          },
+          "evidence": ["CPIC Guideline (2013, updated 2022)", "PharmGKB:PA166104948", "FDA Boxed Warning"]
+        },
+        {
+          "gene": "CYP2C19",
+          "rsid": "rs4986893",
+          "risk_allele": "A",
+          "normal_allele": "G",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use standard clopidogrel dosing." },
+            "0/1": { "level": "HIGH", "phenotype": "Intermediate Metabolizer (*1/*3)", "recommendation": "CYP2C19*3 is a no-function allele. Consider alternative antiplatelet." },
+            "1/1": { "level": "CRITICAL", "phenotype": "Poor Metabolizer (*3/*3)", "recommendation": "Clopidogrel ineffective. Use prasugrel or ticagrelor." }
+          },
+          "evidence": ["CPIC Guideline (2022)", "PharmGKB:PA166104948"]
+        }
+      ]
+    },
+    "codeine": {
+      "name": "Codeine",
+      "category": "Opioid Analgesic",
+      "interactions": [
+        {
+          "gene": "CYP2D6",
+          "rsid": "rs3892097",
+          "risk_allele": "A",
+          "normal_allele": "G",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use codeine per standard guidelines." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate Metabolizer (*1/*4)", "recommendation": "Reduced morphine formation. Monitor for inadequate pain relief." },
+            "1/1": { "level": "HIGH", "phenotype": "Poor Metabolizer (*4/*4)", "recommendation": "Codeine is ineffective (no conversion to morphine). Use alternative analgesic (non-tramadol opioid or non-opioid)." }
+          },
+          "evidence": ["CPIC Guideline (2014, updated 2020)", "PharmGKB:PA166104996", "FDA Safety Communication"]
+        },
+        {
+          "gene": "CYP2D6",
+          "rsid": "rs5030655",
+          "risk_allele": "T",
+          "normal_allele": "A",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Metabolizer", "recommendation": "Use codeine per standard guidelines." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate Metabolizer (*1/*6)", "recommendation": "Reduced CYP2D6 activity. May need dose adjustment or alternative." },
+            "1/1": { "level": "HIGH", "phenotype": "Poor Metabolizer (*6/*6)", "recommendation": "Codeine is ineffective. Use alternative analgesic." }
+          },
+          "evidence": ["CPIC Guideline (2020)", "PharmGKB:PA166104996"]
+        }
+      ]
+    },
+    "simvastatin": {
+      "name": "Simvastatin",
+      "category": "Statin (HMG-CoA Reductase Inhibitor)",
+      "interactions": [
+        {
+          "gene": "SLCO1B1",
+          "rsid": "rs4149056",
+          "risk_allele": "C",
+          "normal_allele": "T",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal Transporter Function", "recommendation": "Use standard simvastatin dosing." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate Transporter Function", "recommendation": "Avoid simvastatin >20 mg/day. Monitor for myopathy symptoms." },
+            "1/1": { "level": "HIGH", "phenotype": "Poor Transporter Function", "recommendation": "Avoid simvastatin or use ≤20 mg/day. High myopathy risk (OR 16.9). Consider pravastatin or rosuvastatin." }
+          },
+          "evidence": ["CPIC Guideline (2014)", "PharmGKB:PA166105005", "PMID:18650507"]
+        }
+      ]
+    },
+    "fluorouracil": {
+      "name": "Fluorouracil (5-FU)",
+      "category": "Antineoplastic",
+      "interactions": [
+        {
+          "gene": "DPYD",
+          "rsid": "rs3918290",
+          "risk_allele": "T",
+          "normal_allele": "C",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal DPD Activity", "recommendation": "Use standard fluorouracil dosing." },
+            "0/1": { "level": "CRITICAL", "phenotype": "Intermediate DPD Activity (*1/*2A)", "recommendation": "Reduce dose by 50%. Life-threatening toxicity risk without dose reduction." },
+            "1/1": { "level": "CRITICAL", "phenotype": "DPD Deficient (*2A/*2A)", "recommendation": "CONTRAINDICATED. Complete DPD deficiency—fatal toxicity risk. Use alternative regimen." }
+          },
+          "evidence": ["CPIC Guideline (2017)", "PharmGKB:PA166122686", "EMA Recommendation"]
+        }
+      ]
+    },
+    "azathioprine": {
+      "name": "Azathioprine",
+      "category": "Immunosuppressant",
+      "interactions": [
+        {
+          "gene": "TPMT",
+          "rsid": "rs1800460",
+          "risk_allele": "A",
+          "normal_allele": "G",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal TPMT Activity", "recommendation": "Use standard azathioprine dosing (2-3 mg/kg/day)." },
+            "0/1": { "level": "HIGH", "phenotype": "Intermediate TPMT Activity (*1/*3B)", "recommendation": "Reduce dose by 30-50%. Monitor CBC weekly during initiation." },
+            "1/1": { "level": "CRITICAL", "phenotype": "TPMT Deficient (*3B/*3B)", "recommendation": "Reduce dose by 90% or use alternative. Risk of fatal myelosuppression." }
+          },
+          "evidence": ["CPIC Guideline (2011, updated 2018)", "PharmGKB:PA166104945"]
+        },
+        {
+          "gene": "TPMT",
+          "rsid": "rs1142345",
+          "risk_allele": "C",
+          "normal_allele": "T",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal TPMT Activity", "recommendation": "Use standard azathioprine dosing." },
+            "0/1": { "level": "HIGH", "phenotype": "Intermediate TPMT Activity (*1/*3C)", "recommendation": "Reduce dose by 30-50%. Monitor for myelotoxicity." },
+            "1/1": { "level": "CRITICAL", "phenotype": "TPMT Deficient (*3C/*3C)", "recommendation": "Reduce dose by 90% or use alternative agent." }
+          },
+          "evidence": ["CPIC Guideline (2018)", "PharmGKB:PA166104945"]
+        }
+      ]
+    },
+    "irinotecan": {
+      "name": "Irinotecan",
+      "category": "Antineoplastic",
+      "interactions": [
+        {
+          "gene": "UGT1A1",
+          "rsid": "rs8175347",
+          "risk_allele": "TA7",
+          "normal_allele": "TA6",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "Normal UGT1A1 Activity (*1/*1)", "recommendation": "Use standard irinotecan dosing." },
+            "0/1": { "level": "MODERATE", "phenotype": "Intermediate UGT1A1 Activity (*1/*28)", "recommendation": "Monitor for neutropenia and diarrhea. Consider dose reduction if toxicity occurs." },
+            "1/1": { "level": "HIGH", "phenotype": "Poor UGT1A1 Activity (*28/*28)", "recommendation": "Reduce initial dose by at least 30%. High risk of severe neutropenia." }
+          },
+          "evidence": ["CPIC Guideline (2019)", "PharmGKB:PA166104951", "FDA Label"]
+        }
+      ]
+    },
+    "tacrolimus": {
+      "name": "Tacrolimus",
+      "category": "Immunosuppressant",
+      "interactions": [
+        {
+          "gene": "CYP3A5",
+          "rsid": "rs776746",
+          "risk_allele": "C",
+          "normal_allele": "T",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "CYP3A5 Non-Expressor (*3/*3)", "recommendation": "Use standard tacrolimus dosing. Most patients are non-expressors." },
+            "0/1": { "level": "MODERATE", "phenotype": "CYP3A5 Intermediate Expressor (*1/*3)", "recommendation": "May require 1.5-2x higher dose to achieve target trough levels." },
+            "1/1": { "level": "HIGH", "phenotype": "CYP3A5 Expressor (*1/*1)", "recommendation": "Likely requires 2-3x higher starting dose. Rapid metabolism—monitor trough levels." }
+          },
+          "evidence": ["CPIC Guideline (2015)", "PharmGKB:PA166124619"]
+        }
+      ]
+    },
+    "abacavir": {
+      "name": "Abacavir",
+      "category": "Antiretroviral (NRTI)",
+      "interactions": [
+        {
+          "gene": "HLA-B",
+          "rsid": "rs2395029",
+          "risk_allele": "T",
+          "normal_allele": "G",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "HLA-B*57:01 Negative", "recommendation": "Use abacavir per standard guidelines." },
+            "0/1": { "level": "CRITICAL", "phenotype": "HLA-B*57:01 Carrier", "recommendation": "CONTRAINDICATED. Do NOT prescribe abacavir. Risk of fatal hypersensitivity reaction." },
+            "1/1": { "level": "CRITICAL", "phenotype": "HLA-B*57:01 Homozygous", "recommendation": "CONTRAINDICATED. Do NOT prescribe abacavir." }
+          },
+          "evidence": ["CPIC Guideline (2014)", "PharmGKB:PA166104997", "FDA Boxed Warning"]
+        }
+      ]
+    },
+    "carbamazepine": {
+      "name": "Carbamazepine",
+      "category": "Anticonvulsant",
+      "interactions": [
+        {
+          "gene": "HLA-B",
+          "rsid": "rs3909184",
+          "risk_allele": "C",
+          "normal_allele": "T",
+          "phenotypes": {
+            "0/0": { "level": "NORMAL", "phenotype": "HLA-B*15:02 Negative", "recommendation": "Use carbamazepine per standard guidelines." },
+            "0/1": { "level": "CRITICAL", "phenotype": "HLA-B*15:02 Carrier", "recommendation": "CONTRAINDICATED in patients of Southeast Asian descent. Risk of Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis." },
+            "1/1": { "level": "CRITICAL", "phenotype": "HLA-B*15:02 Homozygous", "recommendation": "CONTRAINDICATED. Do NOT prescribe carbamazepine." }
+          },
+          "evidence": ["CPIC Guideline (2013)", "PharmGKB:PA166104943", "FDA Warning"]
+        }
+      ]
+    }
+  }
+}
