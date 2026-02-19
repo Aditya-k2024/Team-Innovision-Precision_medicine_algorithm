@@ -13,4 +13,5 @@ COPY . .
 EXPOSE 8000
 
 # Run with hot reload disabled for production
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run with dynamic port (default 8000) for platform compatibility
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
