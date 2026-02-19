@@ -51,8 +51,24 @@ export async function POST(request: NextRequest) {
         });
 
         if (!parseRes.ok) {
-            const err = await parseRes.json().catch(() => ({ detail: "VCF parsing failed" }));
-            return NextResponse.json({ detail: err.detail || "VCF parsing failed" }, { status: parseRes.status });
+            const errorText = await parseRes.text();
+            console.error("VCF Parsing Error Status:", parseRes.status);
+            console.error("VCF Parsing Error Body:", errorText);
+
+            let errorDetail = "VCF parsing failed";
+            try {
+                const errorJson = JSON.parse(errorText);
+                if (errorJson.detail) {
+                    // key "detail" can be string or array (FastAPI validation error)
+                    errorDetail = typeof errorJson.detail === 'string'
+                        ? errorJson.detail
+                        : JSON.stringify(errorJson.detail);
+                }
+            } catch (e) {
+                // ignore json parse error
+            }
+
+            return NextResponse.json({ detail: errorDetail }, { status: parseRes.status });
         }
 
         const parseData = await parseRes.json();
