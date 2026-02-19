@@ -4,7 +4,17 @@
 
 ![PharmaGuard Banner](https://img.shields.io/badge/PharmaGuard-Precision_Medicine-6366f1?style=for-the-badge) ![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi) ![Groq AI](https://img.shields.io/badge/AI-Groq_Llama3-f59e0b?style=for-the-badge)
 
+### 🚀 **Live Demo:** [https://pharmaguard-frontend.onrender.com/](https://pharmaguard-frontend.onrender.com/)
+
 PharmaGuard is a comprehensive pharmacogenomic (PGx) clinical decision support system. It parses patient genetic data (VCF files), identifies critical variants in drug-metabolizing enzymes (CYP450, TPMT, etc.), and predicts potential adverse drug reactions using established CPIC guidelines and AI-driven insights.
+
+## 🎯 Problem Statement: Precision Medicine Algorithm
+<!-- Add detailed problem statement here -->
+
+## 🎥 Demo Video
+<!-- Add LinkedIn/Live video link here -->
+- **LinkedIn Video:** [Link]
+- **Live Video:** [Link]
 
 ## ✨ Features
 
@@ -138,3 +148,10 @@ Contributions are welcome! Please run the test suite before submitting a PR:
 ## 📜 License
 
 MIT License. See [LICENSE](./LICENSE) for details.
+
+## 👥 Team
+
+- **Aditi Priya** - Full Stack Developer
+- **Deepak Raj** - Full Stack Developer
+- **Vaibhav Gupta** - AI/ML Engineer
+- **Aditya Kumar** - AI/ML Engineer
