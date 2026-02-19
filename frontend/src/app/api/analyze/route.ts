@@ -20,6 +20,7 @@ if (!backendUrl.startsWith("http")) {
 const BACKEND_URL = backendUrl;
 
 export async function POST(request: NextRequest) {
+    console.log("Analyzing with backend:", BACKEND_URL);
     try {
         const formData = await request.formData();
         const file = formData.get("file") as File | null;
