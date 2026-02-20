@@ -14,7 +14,7 @@ PharmaGuard is a comprehensive pharmacogenomic (PGx) clinical decision support s
 ## 🎥 Demo Video
 <!-- Add LinkedIn/Live video link here -->
 - **LinkedIn Post:** [Link]
-- **Video:** [Link]
+- **Video:**- https://drive.google.com/file/d/1oW_knxn73hvpCBRl10GOswcdJx3WM2mA/view?usp=sharing
 
 ## ✨ Features
 
