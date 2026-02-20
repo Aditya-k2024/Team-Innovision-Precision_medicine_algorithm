@@ -14,6 +14,7 @@ PharmaGuard is a comprehensive pharmacogenomic (PGx) clinical decision support s
 ## 🎥 Demo Video
 <!-- Add LinkedIn/Live video link here -->
 - **LinkedIn Post:**- https://www.linkedin.com/posts/aditya-kumar-107a9532a_rift2026-pharmaguard-pharmacogenomics-activity-7430417008665468929-r_NO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFMZE1cBx9U4YR03u0PQwT6pzJZOjSjdHmM
+  
 - **Video:**- https://drive.google.com/file/d/1oW_knxn73hvpCBRl10GOswcdJx3WM2mA/view?usp=sharing
 
 ## ✨ Features
